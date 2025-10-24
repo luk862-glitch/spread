@@ -59,16 +59,7 @@ article {
     margin-block:3rem;
 }
 
-p { 
-    max-width: 80ch;
-    padding-inline: 2rem;
-    margin-left: 4rem;
-    padding-block: 1.5rem;
-    line-height: 1.5rem;
-    margin: 0 auto;    
-   }
 
-@media (width > 600px) {
     p { 
     max-width: 65ch;
     padding-inline: 5rem;
@@ -77,38 +68,19 @@ p {
     line-height: 1.5rem;
     margin: 0 auto; 
     }
-   }
+   
 
 
-h2 {
-    padding-left: 5rem;
-    font-weight: 700;
-    font-size: 2rem;
-}
 
-@media (width > 600px) {
     h2 {
     padding-left: 5rem;
     font-weight: 700;
     font-size: 3.5rem;
 }
-}
 
 
-.black {
-    background: linear-gradient(to right, #000000, #BCBCBC);
-    color: black;
-    max-width: 14ch;
-    padding-left: 10rem;
-    margin-top:10rem;
-    text-align: end;
-    padding-inline-end: 2rem;
-    display: flex;
-    justify-content: flex-end;
 
-}
 
-@media (width > 600px) {
 .black {
     background: linear-gradient(to right, #000000, #BCBCBC);
     color: black;
@@ -121,7 +93,6 @@ h2 {
     justify-content: flex-end;
 
 }
-}
 
 .white {
     background: linear-gradient(to right, #FFFFFF, #A8A8A8);
@@ -133,8 +104,6 @@ h2 {
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
-
-
 }
 
 .yellow {
@@ -203,7 +172,7 @@ h2 {
 
 .paragraph-left {
     text-align: left;
-    /* margin-left: -2rem; */
+    margin-left: -2rem;
     margin-block: 2rem;
     line-height: 1.5rem;
     max-width: 62ch;
