@@ -3,6 +3,7 @@
     --spacing: 1rem;
     font-family: 'Clash Grotesk', sans-serif;
     font-size: 125%;
+    width: 100%;
 }
 
 @media (width > 600px) {
@@ -53,8 +54,8 @@ p {
     margin-left: 4rem;
     padding-block: 1.5rem;
     line-height: 1.5rem;
-    margin: 0 auto;  
-
+    margin: 0 auto; 
+    
    }
 
 
@@ -69,22 +70,92 @@ h2 {
     color: black;
     max-width: 14ch;
     padding-left: 21rem;
+    margin-top:10rem;
+    text-align: end;
+    padding-inline-end: 2rem;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 .white {
     background: linear-gradient(to right, #FFFFFF, #A8A8A8);
     color: white;
-    /* margin-inline-end: initial;
-    margin-inline-start: 1rem; */
     max-width: 14ch;
     margin-left: 32rem;
-    /* padding-inline-end: -10rem; */
-    /* max-width: 40ch; */
-    /* padding-left: 21rem; */
-    /* margin-left: 31rem; */
+    padding-inline-end: 20rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
 
 }
+
+.yellow {
+    background: linear-gradient(to right, #FFD42A, #FFFFBC);
+    color: #FFD737;
+    max-width: 14ch;
+    padding-left: 21rem;
+    text-align: end;
+    padding-inline-end: 2rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.orange {
+    background: linear-gradient(to right, #FF6A00, #FFC96B);
+    color: #FF6F00;
+    max-width: 14ch;
+    margin-left: 32rem;
+    padding-left: 2rem;
+}
+
+.red {
+    background: linear-gradient(to right, #703834, #FF0000);
+    color: #FF0000;
+    max-width: 14ch;
+    padding-left: 21rem;
+    text-align: end;
+    padding-inline-end: 2rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.green {
+    background: linear-gradient(to right, #45C903, #022300);
+    color: #359F00;
+    max-width: 14ch;
+    margin-left: 32rem;
+    padding-left: 2rem;
+}
+
+.blue {
+    background: linear-gradient(to right, #005BC3, #77B7FF);
+    color: #005BC3;
+    max-width: 14ch;
+    padding-left: 21rem;
+    text-align: end;
+    padding-inline-end: 2rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.purple {
+    background: linear-gradient(to right, #941DF6, #17028F);
+    color: #6310E1;
+    max-width: 14ch;
+    margin-left: 32rem;
+    padding-left: 2rem;
+}
+
+
+
+
 
 
 
@@ -93,13 +164,17 @@ h2 {
     margin-left: -2rem;
     margin-block: 2rem;
     line-height: 1.5rem;
+    max-width: 62ch;
+    margin-bottom: 7rem;
 
 }
 
 
 .paragraph-right {
     text-align: left;
-    margin-right: -2.5rem;
+    margin-right: -3.5rem;
     margin-block: 2rem;
     line-height: 1.5rem;
+    max-width: 60ch;
+    margin-bottom: 7rem;
 }
