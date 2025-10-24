@@ -1,7 +1,7 @@
 :root {
     background-color: antiquewhite;
     --spacing: 1rem;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Clash Grotesk', sans-serif;
     font-size: 125%;
 }
 
@@ -21,6 +21,41 @@ body {
     padding: var (--spacing);
 }
 
+header{
+    background-color: black;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: 7rem;
+    color:white;
+    padding-left: 2rem;
+    padding-bottom:7rem;
+}
+
+.metadata {
+    font-size: 1rem;
+    color:white;
+    padding-left: 2.5rem;
+    display: flex;
+    justify-content:flex-start;
+    gap: 0.5rem;
+}
+
+article {
+    margin-block:3rem;
+}
+
+p { 
+    max-width: 75ch;
+    padding-inline: 5rem;
+    margin-left: 4rem;
+    margin-block: 1.8rem;
+    
+ }
+
+
+h2 {
+    padding-left: 5rem;
 }
