@@ -63,53 +63,84 @@ article {
 
     p { 
     max-width: 65ch;
+    padding-inline: 2rem;
+    /* margin-left: 4rem; */
+    padding-block: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 auto; 
+    }
+
+
+    @media (width > 600px) { 
+    p { 
+    max-width: 65ch;
     padding-inline: 5rem;
     margin-left: 4rem;
     padding-block: 1.5rem;
     line-height: 1.5rem;
     margin: 0 auto; 
     }
+    }
    
 
 
-
     h2 {
-    padding-left: 5rem;
+    padding-left: 2rem;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 
-.left-block {
-    inline-size: 60%;
-	position: static;
+   @media (width > 600px){
+    h2 {
+    padding-left: 5rem;
+    /* font-weight: 700; */
+    font-size: 3.5rem;
+}
+}
+
+
+.left-block{
     margin-bottom: 2rem;
 }
 
 .right-block{
-inline-size: 60%;
+    margin-bottom: 2rem;
+}
+
+
+ @media (width > 600px) {
+    .left-block {
+    inline-size: 60%;
+	position: static;
+    margin-bottom: 2rem;
+}
+ }
+
+
+@media (width > 600px) {
+  .right-block{
+    inline-size: 60%;
   position: relative;
   left: 40%; 
   margin-bottom: 2rem;
+}  
 }
-
 
 .color-left{
     max-width: 14ch;
-    padding-left: 21rem;
-    margin-top:10rem;
-    text-align: end;
-    padding-inline-end: 2rem;
+    padding-right: 2rem;
     display: flex;
     justify-content: flex-end;
 }
+
 
 .color-right{
     max-width: 14ch;
     margin-left: 9vw;
     padding-left: 2rem;
-    
 }
+
 
 .black {
     background: linear-gradient(to right, #000000, #BCBCBC);
@@ -124,12 +155,7 @@ inline-size: 60%;
 .yellow {
     background: linear-gradient(to right, #FFD42A, #FFFFBC);
     color: #FFD737;
-    max-width: 14ch;
-    padding-left: 21rem;
-    text-align: end;
-    padding-inline-end: 2rem;
-    display: flex;
-    justify-content: flex-end;
+
 
 }
 
@@ -158,6 +184,33 @@ inline-size: 60%;
     background: linear-gradient(to right, #941DF6, #17028F);
     color: #6310E1;
 }
+
+
+footer { 
+    color:white;
+    text-align:right;
+    background-color: black;
+    font-size: 1rem;
+    margin-top: 5rem;
+    padding-inline: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+@media (width > 600px) {
+    footer { 
+    color:white;
+    text-align:right;
+    background-color: black;
+    font-size: 1rem;
+    margin-top: 5rem;
+    padding-inline: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+}
+
+
 
 
 /* original left block class */
