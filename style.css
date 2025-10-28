@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Clash+Grotesk:wght@300;400;500;600;700&display=swap");
+
 :root {
     background-color: #F5F5F5;
     --spacing: 1rem;
     font-family: 'Clash Grotesk', sans-serif;
-    font-size: 120%;
+    font-size: 110%;
     width: 100%;
 }
 
@@ -27,7 +29,6 @@ header{
     padding-bottom: 2rem;
     padding-top: 5rem;
 }
-
 
 
 h1 {
@@ -62,12 +63,10 @@ article {
 
 
     p { 
-    max-width: 65ch;
-    padding-inline: 2rem;
+    padding-inline: .8rem;
     /* margin-left: 4rem; */
-    padding-block: 1.5rem;
+    padding-block: 1rem;
     line-height: 1.5rem;
-    margin: 0 auto; 
     }
 
 
