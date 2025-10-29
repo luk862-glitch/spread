@@ -39,10 +39,44 @@
 }
 
 @media print {
+  
     :root{
         --color-bg: blue;
-    }
+      }
+  .link-to-text{
+    display: none !important;
+  }
+
+  h1 {
+    color: #2e2e2e !important;
 }
+
+    p {
+    text-align: left !important;
+    margin: 0 auto !important;
+    width: 75ch !important; 
+  }
+
+  .color-block-left, .color-block-right{
+    display: none !important;
+    }
+
+
+  .right-block{
+   inline-size: 90% !important;
+	position: static !important;
+    margin-bottom: 2rem !important;
+}  
+
+.color-bar {
+  display: none !important;
+}
+
+.metadata {
+    padding-top: 1rem !important;
+}
+}
+
 
 html, body { font-family: var(--font-sans); }
 
@@ -83,8 +117,6 @@ h1 {
     justify-content:flex-start;
     gap: 1.5rem;
     padding-top: 5rem;
-    
-   
 }
 
 article {
@@ -141,7 +173,7 @@ article {
 
 @media (width > 600px) { 
     .content-left { 
-    max-width: 58ch;
+    max-width: 65ch;
     padding-inline: 5rem;
     padding-block: 1.5rem;
     line-height: 1.9rem;
@@ -373,18 +405,21 @@ em{
   font-weight: 500;
 }
 
+
+
+/* color bar in the header */
 .color-bar {
   position: relative;
-  height: 20px;        /* total height of the bar */
+  height: 20px;  /* total height of the bar */
   margin-top: 1rem;
 }
 
 .line {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 0;  
   width: 70%;
-  height: 20px;          /* thickness of the white line */
+  height: 20px; /* thickness of the white line */
   background: white;
   transform: translateY(-50%);
 }
@@ -404,3 +439,25 @@ em{
   width: 30px;
   height: 20px;
 }
+
+
+/* link */
+a {
+  font-size: 1rem;
+  color:rgb(255, 255, 255);
+  float: right;  
+  position: relative;
+  left: 15%;
+	margin-inline-end: 5rem;
+  margin-bottom:3rem;
+  text-decoration: underline; 
+}
+
+a:hover {
+  color:rgb(181, 241, 255);
+}
+
+a:visited {
+  color:rgb(253, 98, 98);
+}
+
