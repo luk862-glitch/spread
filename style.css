@@ -100,7 +100,7 @@ article {
     }
 
 /* left-block & right-block classes are assigned to sections */
-.left-block .right-block{
+.left-block, .right-block{
     margin-bottom: 2rem;
 }
 
@@ -116,9 +116,9 @@ article {
 @media (width > 600px) {
   .right-block{
     inline-size: 60%;
-  position: relative;
   left: 40%; 
   margin-bottom: 2rem;
+  position: relative;
 }  
 } 
 
@@ -148,29 +148,17 @@ article {
   aspect-ratio: 5 / 2;
   margin: 2rem auto;
   z-index: 10;
+  position: sticky; 
+  top: 0;          
 }
 
-@media (max-width: 600px) {
-  .color-block {
-    position: sticky;
-    top: 1rem;
-    top: 0;               
-    margin-top: 0;        
-    margin-bottom: 1rem;
-    width: 65%;
-    aspect-ratio: 7 / 1.5;
-    position: static; 
-  }
-}
-
-@media (width > 600px) {
+@media (min-width: 600px) {
   .color-block {
     width: 65%;
     aspect-ratio: 7 / 1.5;
-    position: static; 
+    position: static;
   }
 }
-
 
 /* this part styles the outer part of the rectangles */
 
