@@ -16,6 +16,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("fonts/clash-grotesk/ClashGrotesk-Semibold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
     background-color: #F5F5F5;
     --spacing: 1rem;
@@ -131,6 +138,22 @@ article {
 
 @media (width > 600px) { 
     .content-left { 
+    max-width: 58ch;
+    padding-inline: 5rem;
+    padding-block: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: -1rem;
+    }
+    }
+
+.content-right {
+    padding-inline: 4rem;
+    padding-block: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (width > 600px) { 
+    .content-right { 
     max-width: 65ch;
     padding-inline: 5rem;
     padding-block: 1.5rem;
@@ -140,7 +163,8 @@ article {
     }
 
 
-.color-block {
+/* color block for mobile */
+.color-block-left, .color-block-right{
   display: flex;
   justify-content: center;   
   align-items: center;       
@@ -149,21 +173,47 @@ article {
   margin: 2rem auto;
   z-index: 10;
   position: sticky; 
-  top: 0;          
+  top: 0;  
+  backdrop-filter: blur(0.2rem);
+  /* opacity: 70%; */
+}
+    /* backdrop-filter: blur(10px); */
+  
+  /* filter:blur(0.2rem); 
+  opacity: 90%; 
+
 }
 
-@media (min-width: 600px) {
-  .color-block {
+
+/* @media (min-width: 600px) {
+ .color-block-left, .color-block-right {
     width: 65%;
     aspect-ratio: 7 / 1.5;
     position: static;
   }
+} */
+
+@media (width > 600px) {
+.color-block-left {
+    width: 65%;
+    aspect-ratio: 7 / 1.5;
+    position: static;
+  }
+
+ .color-block-right {
+   width: 100%;
+    aspect-ratio: 7 / 1.5;
+    position: static;
+    margin-left: auto;
+ }
 }
+
+
 
 /* this part styles the outer part of the rectangles */
 
 .black {
-  background: linear-gradient(to right, #000000, #BCBCBC);
+  background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgb(188, 188, 188,  0.2));
     margin-left: 0;          
   margin-right: auto;
 }
@@ -282,8 +332,13 @@ footer {
 }
 }
 
-
+.color-name{
+  font-size: 2rem;
+}
 
 em{
-  font-weight:700;
+  color: rgb(65, 65, 65);
+  font-weight: 500;
 }
+
+
