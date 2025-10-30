@@ -408,10 +408,12 @@ footer {
     text-align:right;
     background-color: black;
     font-size: 1rem;
-    margin-top: 5rem;
     padding-inline: 3rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
 
 @media (width > 600px) {
@@ -497,9 +499,27 @@ em{
 
 }
 
+.top-button{
+  background: linear-gradient(to right, #ffd42a, #FF6A00, #f01101, #941DF6, #005BC3, #45C903);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  margin: 0 5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  display: block;
+}
+
+@media (width > 600px) {
+.top-button{
+  background: linear-gradient(to right, #ffd42a, #FF6A00, #f01101, #941DF6, #005BC3, #45C903);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  float: left;
+}
+}
 
 /* link */
-a {
+.original {
   font-size: 1rem;
   color:rgb(255, 255, 255);
   float: right;  
@@ -510,10 +530,11 @@ a {
   text-decoration: underline; 
 }
 
-a:hover {
+.original:hover {
   color:rgb(181, 241, 255);
 }
 
-a:visited {
+.original:visited {
   color:rgb(253, 98, 98);
 }
+
