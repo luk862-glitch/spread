@@ -144,6 +144,35 @@ article {
     }
 
 
+blockquote{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-block: 1rem;
+    line-height: 1.9rem;
+    border-left: 0.3rem solid;
+    border-image: linear-gradient(to bottom, #ffd42a, #FF6A00, #f01101, #941DF6, #005BC3, #45C903);
+    border-image-slice: 1;
+    margin-left: 2rem;
+}
+
+ @media (width > 600px){
+blockquote{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    line-height: 1.9rem;
+    margin: 0 auto; 
+    max-width: 45ch;
+    border-left: 0.3rem solid ;
+    border-image: linear-gradient(to bottom, #ffd42a, #FF6A00, #f01101, #941DF6, #005BC3, #45C903);
+    border-image-slice: 1;
+}
+}
+
+
     @media (width > 600px) { 
     p { 
     max-width: 65ch;
@@ -243,7 +272,6 @@ article {
 }
 
 
-
 /* this part styles the outer part of the rectangles */
 
 .black {
@@ -259,7 +287,7 @@ article {
 }
 
 .yellow {
-  background: linear-gradient(to right, rgb(255, 212, 42), rgb(255, 255, 188, 0.7));
+  background: linear-gradient(to right, #ffd42a, rgb(255, 255, 188, 0.7));
     margin-left: 0;       
   margin-right: auto;
 }
@@ -462,6 +490,8 @@ em{
   height: 20px;
 }
 
+}
+
 
 /* link */
 a {
@@ -481,6 +511,4 @@ a:hover {
 
 a:visited {
   color:rgb(253, 98, 98);
-}
-
 }
