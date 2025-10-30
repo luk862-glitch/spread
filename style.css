@@ -105,7 +105,7 @@ header{
 
 
 h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     color:rgb(255, 255, 255);
     padding-left: 2rem;
     padding-bottom:1rem;
@@ -179,7 +179,7 @@ article {
 
  
 .content-left {
-    padding-inline: 4rem;
+    padding-inline: 2rem;
     padding-block: 1rem;
     line-height: 1.9rem;
 }
@@ -409,15 +409,15 @@ em{
 .color-bar {
   display: flex;
   align-items: center;
-  height: 20px;
+  height: 15px;
   margin-top: 1rem;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .line {
   flex: 1 1 auto;           
   min-width: 0;          
-  height: 20px;
+  height: 15px;
   background: white;
 }
 
@@ -427,7 +427,7 @@ em{
 
 .color {
   width: 30px;
-  height: 20px;
+  height: 15px;
 }
 
 @media (width > 600px) {
