@@ -43,6 +43,9 @@
     :root{
         --color-bg: blue;
         background-color: transparent;
+         .link-to-text{
+    display: none !important;
+  }
       }
   header, footer {
     background: none !important;
@@ -56,9 +59,7 @@
     color: black !important;
   }
 
-  .link-to-text{
-    display: none !important;
-  }
+ 
 
   h1 {
     color: #2e2e2e !important;
@@ -78,6 +79,9 @@ footer {
     display: none !important;
     }
 
+a{
+    display: none !important;
+}
 
   .right-block{
    inline-size: 90% !important;
@@ -91,6 +95,7 @@ footer {
 
 .metadata {
     padding-top: 1rem !important;
+
 }
 
 }
